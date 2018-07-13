@@ -1,0 +1,28 @@
+<wm-page name="page1" data-ng-controller="TestScrollPageController" pagetitle="Test Scroll">
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-panel class="panel-primary" name="panel1" subheading="subheading" iconclass="" autoclose="outsideClick" title="Title"></wm-panel>
+            <wm-list navigation="Scroll" dataset="bind:Variables.statLiat.dataSet" name="statLiatList1" listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list">
+                <wm-listtemplate name="listtemplate1" layout="inline">
+                    <wm-container height="400" name="container2" class="media-body" padding="unset unset unset 1.25em">
+                        <wm-label name="Name" class="p media-heading" caption="bind:Variables.statLiat.dataSet.dataValue" fontsize="2" fontunit="em"></wm-label>
+                        <wm-button on-click="Widgets.dialog1.open()" name="button2" class="btn-default btn-primary" caption="Open" type="button" margin="unset 0.5em"></wm-button>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-list>
+        </wm-page-content>
+    </wm-content>
+    <wm-view name="view1" class="dialog-view">
+        <wm-dialog width="90%" name="dialog1" dialogtype="design-dialog" modal="true" title="Information" iconclass="wi wi-file-text">
+            <wm-list navigation="None" dataset="bind:Variables.statCardList.dataSet" name="statCardListList1" listclass="list-group" itemsperrow="xs-2 sm-3 md-4 lg-6" template="true" class="list-card">
+                <wm-listtemplate name="listtemplate2" layout="media">
+                    <wm-card name="Picture">
+                        <wm-card-content name="card_content1">
+                            <wm-label on-tap="NameTap($event, $scope, item, currentItemWidgets)" fontsize="2" fontunit="em" name="Name" class="h4" margin="0px unset" caption="bind:Variables.statCardList.dataSet.dataValue" whitespace="nowrap"></wm-label>
+                        </wm-card-content>
+                    </wm-card>
+                </wm-listtemplate>
+            </wm-list>
+        </wm-dialog>
+    </wm-view>
+</wm-page>

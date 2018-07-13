@@ -1,0 +1,66 @@
+{
+  "statCardList" : {
+    "_id" : "wm-statCardList-wm.Variable-1530785717340",
+    "name" : "statCardList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "dataValue" : "TEST1"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "statLiat" : {
+    "_id" : "wm-statLiat-wm.Variable-1530784170718",
+    "name" : "statLiat",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "dataValue" : "1"
+    }, {
+      "dataValue" : "2"
+    }, {
+      "dataValue" : "3"
+    }, {
+      "dataValue" : "4"
+    }, {
+      "dataValue" : "5"
+    }, {
+      "dataValue" : "6"
+    }, {
+      "dataValue" : "7"
+    }, {
+      "dataValue" : "8"
+    }, {
+      "dataValue" : "9"
+    }, {
+      "dataValue" : "10"
+    }, {
+      "dataValue" : "11"
+    }, {
+      "dataValue" : "12"
+    }, {
+      "dataValue" : "13"
+    }, {
+      "dataValue" : "14"
+    }, {
+      "dataValue" : "15"
+    }, {
+      "dataValue" : "16"
+    }, {
+      "dataValue" : "17"
+    }, {
+      "dataValue" : "18"
+    }, {
+      "dataValue" : "19"
+    }, {
+      "dataValue" : "20"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

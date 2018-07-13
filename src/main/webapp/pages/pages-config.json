@@ -11,13 +11,20 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "TestScroll",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "footer",
   "type" : "FOOTER",
   "params" : [ ]
 }, {
   "name" : "header",
   "type" : "HEADER",
-  "params" : [ ]
+  "params" : [ {
+    "name" : "pTitle",
+    "type" : "string"
+  } ]
 }, {
   "name" : "leftnav",
   "type" : "LEFTNAV",

@@ -1,11 +1,12 @@
-<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header" height="auto"></wm-header>
-    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
-    <wm-content name="content">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
-        </wm-page-content>
-        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
-    </wm-content>
-    <wm-footer name="footer" content="footer"></wm-footer>
+<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="bind:Variables.statPrgName.dataSet.dataValue"> 
+    <wm-header name="header1" content="header"> 
+        <wm-param name="pTitle" value="bind:Variables.statPrgName.dataSet.dataValue" type="string"></wm-param> 
+    </wm-header> 
+    <wm-content name="content"> 
+        <wm-page-content padding="unset 10px" columnwidth="12" name="mainContent"></wm-page-content> 
+    </wm-content> 
+    <wm-footer name="footer1" content="footer"></wm-footer> 
+    <wm-view name="view1" class="dialog-view"> 
+        <wm-alertdialog on-close="variableOnClose()" on-ok="variableOnOk()" alerttype="{{notification.alerttype}}" oktext="{{notification.okButtonText}}" title="{{notification.title}}" message="{{notification.text}}" notificationdialog="alert" controller="NotificationDialogController" name="notificationalertdialog"></wm-alertdialog> 
+    </wm-view> 
 </wm-page>
